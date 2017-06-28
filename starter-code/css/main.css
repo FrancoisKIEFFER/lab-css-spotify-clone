@@ -6,3 +6,79 @@ Green: #00B172
 White: #FFF
 
 */
+body {
+}
+
+nav  {
+  text-align: right;
+}
+nav img {
+   float: left;
+}
+nav img:hover{
+   animation-name: bounce;
+   animation-duration: 2s;
+}
+
+header {
+  color: white;
+  background: url(landing.jpg) center;
+  height:100vh;
+  background-size: cover;
+}
+header h1,header p {
+  transform: translateY(600%);
+  text-align: center;
+}
+
+.whatOnSpotify h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00B172;
+}
+
+.icon {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+}
+
+.kanyeWest {
+  background-color: #00B172;
+  color: white;
+  margin: 3%;
+  display: inline-block;
+}
+.kanyeWest h2 {
+  text-decoration: underline;
+  margin-left: 5%;
+}
+.kanyeWest h3, .kanyeWest p {
+  text-align: left;
+  width: 33%;
+  margin: 5%;
+}
+
+
+
+ @keyframes bounce {
+   from, 20%, 53%, 80%, to {
+     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     transform: translate3d(0,0,0);
+   }
+
+   40%, 43% {
+     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+     transform: translate3d(0, -30px, 0);
+   }
+
+   70% {
+     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+     transform: translate3d(0, -15px, 0);
+   }
+
+   90% {
+     transform: translate3d(0,-4px,0);
+   }
+ }
